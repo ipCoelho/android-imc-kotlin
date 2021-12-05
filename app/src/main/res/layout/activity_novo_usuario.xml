@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NovoUsuarioActivity"
+    android:background="@drawable/activity_background"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#ff0000"
+                app:cardCornerRadius="75dp">
+
+                <ImageView
+                    android:id="@+id/iv_foto_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/person_icon"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_trocar_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trocar foto"
+                android:textColor="#474444"
+                android:textSize="18sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_lock_24"
+                    android:tint="@color/purple_500"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados para autenticação"
+                    android:paddingStart="2dp"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+            
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:layout_marginTop="12dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:layout_marginTop="12dp"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:tint="@color/purple_500"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados para autenticação"
+                    android:paddingStart="2dp"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:layout_marginTop="12dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_profissao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Profissão"
+                android:layout_marginTop="12dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Altura"
+                android:layout_marginTop="12dp">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data de nascimento"
+                android:layout_marginTop="12dp"
+                android:focusable="false">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Sexo"
+                android:textColor="#818080"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="12dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonFeminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino"
+                    android:textSize="16sp"
+                    android:textColor="#818080"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textSize="16sp"
+                    android:textColor="#818080"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

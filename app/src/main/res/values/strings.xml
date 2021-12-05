@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">RelativeLayoutApplication</string>
+
+    <string-array name="niveis">
+        <item>Atividade leve</item>
+        <item>Atividade moderada</item>
+        <item>Atividade intensa</item>
+    </string-array>
+
+    <style name="color_hint">
+        <item name="android:textColor">#A5A4A4</item>
+    </style>
+
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.PesoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/activity_background_branco"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="#ff0000"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/iv_peso_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_perfil1"
+                android:scaleType="centerCrop"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_peso_yoga"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/lotus"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acompanhe seu histórico!"
+            android:textSize="28sp"
+            android:textColor="#494444"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_info_24"
+                android:tint="@color/purple_500"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mantenha seu peso sempre atualizado, assim você poderá acompanhar sua evolução."
+                android:justificationMode="inter_word"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dados de sua pesagem"
+            android:textColor="#494444"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp" >
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_date_range_24"
+                android:tint="@color/purple_500"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:foregroundGravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data de pesagem"
+                android:textColor="#2E2C2C"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_peso_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_fitness_center_24"
+                android:tint="@color/purple_500"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nível de atividade"
+                android:textColor="#2E2C2C"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spn_niveis"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="38dp"
+            android:entries="@array/niveis"
+            android:theme="@style/color_hint"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_accessibility_24"
+                android:tint="@color/purple_500"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seu peso"
+                android:textColor="#2E2C2C"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_peso_seu_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:textSize="16sp"
+            android:hint="Digite seu peso...">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <Button
+            android:id="@+id/btn_peso_salvar"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar peso"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

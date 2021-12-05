@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DashboardActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/activity_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="#ff0000"
+                app:cardCornerRadius="60dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_dashboard_imgperfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_perfil1"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_dashboard_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Susanna Hoffs"
+                android:textColor="#2B2828"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_dashboard_profissao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Singer"
+                android:textColor="#2B2828"
+                android:textSize="17sp"
+                android:layout_marginTop="2dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_dashboard_imc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25.7"
+                        android:textColor="#2B2828"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMC"
+                        android:textColor="#2B2828"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_dashboard_dataNascimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1980"
+                        android:textColor="#2B2828"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NCD"
+                        android:textColor="#2B2828"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_dashboard_idade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="49"
+                        android:textColor="#2B2828"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Idade"
+                        android:textColor="#2B2828"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_dashboard_peso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="67"
+                        android:textColor="#2B2828"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peso"
+                        android:textColor="#2B2828"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_dashboard_altura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.58"
+                        android:textColor="#2B2828"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Altura"
+                        android:textColor="#2B2828"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:gravity="center"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_pesar_agora"
+                    android:background="@drawable/activity_border_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_pesar_agora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/weighing_machine" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_pesar_agora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pesar agora"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="88dp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textStyle="bold"
+                        android:textFontWeight="500"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acompanhe o seu peso."
+                        android:layout_marginStart="88dp"
+                        android:gravity="center"
+                        android:layout_marginTop="40dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@drawable/activity_border_relative_layout"
+                    android:id="@+id/rl_ver_historico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_ver_historico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/business_plan" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_ver_historico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver histórico"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="88dp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textStyle="bold"
+                        android:textFontWeight="500"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reveja suas conquistas."
+                        android:layout_marginStart="88dp"
+                        android:gravity="center"
+                        android:layout_marginTop="40dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
